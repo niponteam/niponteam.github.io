@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header styles */
+header {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    display: block;
+    border: 3px solid #3498db;
+    box-shadow: 0 0 15px rgba(52, 152, 219, 0.5);
+}
+
+.nipon_header {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    color: #ecf0f1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#floating_text {
+    font-style: italic;
+    color: #bdc3c7;
+    position: relative;
+    display: inline-block;
+}
+
+/* Main content */
+main {
+    padding: 2rem 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* NiponTeam section */
+.niponteam {
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.headers {
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #e74c3c;
+    padding-bottom: 0.5rem;
+}
+
+.headers img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    display: block;
+    border: 3px solid #3498db;
+    box-shadow: 0 0 15px rgba(52, 152, 219, 0.5);
+}
+
+.headers h2 {
+    color: #ff6b6b;
+    font-size: 2rem;
+}
+
+.headers p {
+    color: #bdc3c7;
+    font-size: 1.2rem;
+}
+
+/* Projects section */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.projects > div {
+    background-color: #2a2a2a;
+    border-radius: 6px;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.projects > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.projects h3 {
+    color: #4fc3f7;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.projects p {
+    color: #bdc3c7;
+    margin-bottom: 1rem;
+}
+
+.projects a {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin: 0 auto;
+}
+
+.projects a:hover {
+    background-color: #2980b9;
+}
+
+/* Socials section */
+.socials {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.socials a {
+    background-color: #34495e;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.socials a:hover {
+    background-color: #2c3e50;
+}
+
+/* Other section (Team members) */
+.other {
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.other > h2 {
+    color: #ff6b6b;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #ff6b6b;
+    padding-bottom: 0.5rem;
+}
+
+.other > div {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: #2a2a2a;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.other h3, .other h2 {
+    color: #4fc3f7;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.other .headers {
+    border-bottom-color: #4fc3f7;
+}
+
+.other .headers h2 {
+    color: #4fc3f7;
+}
+
+/* Team member specific avatar styles */
+.niponteam .headers img {
+    width: 150px;
+    height: 150px;
+    border: 4px solid #ff6b6b;
+    box-shadow: 0 0 20px rgba(255, 107, 107, 0.5);
+}
+
+.komaru .headers img {
+    border-color: #4fc3f7;
+    box-shadow: 0 0 15px rgba(79, 195, 247, 0.5);
+}
+
+.yog774 .headers img {
+    border-color: #9b59b6;
+    box-shadow: 0 0 15px rgba(155, 89, 182, 0.5);
+}
+
+.sambubo .headers img {
+    border-color: #2ecc71;
+    box-shadow: 0 0 15px rgba(46, 204, 113, 0.5);
+}
+
+.semkapc .headers img {
+    border-color: #f39c12;
+    box-shadow: 0 0 15px rgba(243, 156, 18, 0.5);
+}
+
+/* Footer styles */
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    position: relative;
+    margin-top: 2rem;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+}
+
+footer a {
+    color: #4fc3f7;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+#year_flying {
+    position: relative;
+    display: inline-block;
+    transition: top 0.3s ease;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .projects {
+        grid-template-columns: 1fr;
+    }
+
+    .nipon_header {
+        font-size: 2.5rem;
+    }
+
+    .headers h2 {
+        font-size: 1.8rem;
+    }
+
+    .other h3, .other h2 {
+        font-size: 1.5rem;
+    }
+
+    .headers img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .niponteam .headers img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nipon_header {
+        font-size: 2rem;
+    }
+
+    .projects > div, 
+    .other > div {
+        padding: 1rem;
+    }
+
+    .socials {
+        flex-direction: column;
+    }
+
+    .socials a {
+        text-align: center;
+    }
+
+    .headers img {
+        width: 80px;
+        height: 80px;
+        border-width: 2px;
+    }
+
+    .niponteam .headers img {
+        width: 100px;
+        height: 100px;
+    }
+
+    header img {
+        width: 80px;
+        height: 80px;
+    }
+}
