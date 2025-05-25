@@ -235,6 +235,81 @@ main {
     box-shadow: 0 0 15px rgba(243, 156, 18, 0.5);
 }
 
+.nipon .headers img {
+    border-color: #FFD700;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+}
+
+/* General role styles for all team members */
+.other .role {
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 2px solid;
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin: 15px auto;
+    max-width: 80%;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.other .role p {
+    font-weight: bold;
+    margin: 5px 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    font-size: 1.1rem;
+}
+
+/* Specific role styles for each team member */
+.nipon .role {
+    background-color: rgba(255, 215, 0, 0.1);
+    border-color: #FFD700;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+}
+
+.nipon .role p {
+    color: #FFD700;
+}
+
+.komaru .role {
+    background-color: rgba(79, 195, 247, 0.1);
+    border-color: #4fc3f7;
+    box-shadow: 0 0 10px rgba(79, 195, 247, 0.3);
+}
+
+.komaru .role p {
+    color: #4fc3f7;
+}
+
+.yog774 .role {
+    background-color: rgba(155, 89, 182, 0.1);
+    border-color: #9b59b6;
+    box-shadow: 0 0 10px rgba(155, 89, 182, 0.3);
+}
+
+.yog774 .role p {
+    color: #9b59b6;
+}
+
+.sambubo .role {
+    background-color: rgba(46, 204, 113, 0.1);
+    border-color: #2ecc71;
+    box-shadow: 0 0 10px rgba(46, 204, 113, 0.3);
+}
+
+.sambubo .role p {
+    color: #2ecc71;
+}
+
+.semkapc .role {
+    background-color: rgba(243, 156, 18, 0.1);
+    border-color: #f39c12;
+    box-shadow: 0 0 10px rgba(243, 156, 18, 0.3);
+}
+
+.semkapc .role p {
+    color: #f39c12;
+}
+
 /* Footer styles */
 footer {
     background-color: #1a1a1a;
